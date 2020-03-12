@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\belin\Documents\Dev-Local\Others\Quartus\BCD_7seg\simulation\qsim
+vbcd_7seg
+Z1 I2Rlz[MZHZ:5]<9dhW4HZR3
+Z2 V]A87LX[B0M[c0jFZMJ=o93
+Z3 dC:\Users\belin\Documents\Dev-Local\Others\Quartus\BCD_7seg\simulation\qsim
+Z4 w1583937699
+Z5 8bcd_7seg.vo
+Z6 Fbcd_7seg.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|bcd_7seg.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 T<77KAbYoCd`m57L5geiO2
+!s85 0
+Z11 !s108 1583937701.881000
+Z12 !s107 bcd_7seg.vo|
+!s101 -O0
+vbcd_7seg_vlg_check_tst
+!i10b 1
+Z13 !s100 Denb>`1?chze83;kGUi9C2
+Z14 ILmRUmfRgDUP[@Lz751eWG0
+Z15 VISzYi7T:On2c1GB^Njo6A2
+R3
+Z16 w1583937697
+Z17 8bcd_7seg.vt
+Z18 Fbcd_7seg.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z19 !s108 1583937702.042000
+Z20 !s107 bcd_7seg.vt|
+Z21 !s90 -work|work|bcd_7seg.vt|
+!s101 -O0
+R9
+vbcd_7seg_vlg_sample_tst
+!i10b 1
+Z22 !s100 8KQcGFdoB8VTol3L7Nak`3
+Z23 IQj@9JYT]_`Iom]IV3GnA_0
+Z24 Vl`@=N?mWCkddOTnhHCd4;1
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vbcd_7seg_vlg_vec_tst
+!i10b 1
+!s100 9VM7@WXn_o6eJ1SmaN75Y2
+IJb>fN;9Q>UYWdK0gOd3Sz1
+Z25 VY=AdA6lM[<94lI6@3b@jQ2
+R3
+R16
+R17
+R18
+Z26 L0 259
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

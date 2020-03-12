@@ -1,0 +1,11 @@
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+entity bcd_7seg is port
+(
+	A : in std_logic_vector(3 downto 0);
+	B : out std_logic_vector(6 downto 0)
+);
+end bcd_7seg;
