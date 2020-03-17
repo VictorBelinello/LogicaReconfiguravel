@@ -25,5 +25,5 @@
 # Loading work.bcd_7seg_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : bcd_7seg.vt(255)
+# ** Note: $finish    : bcd_7seg.vt(261)
 #    Time: 1 us  Iteration: 0  Instance: /bcd_7seg_vlg_vec_tst/tb_out

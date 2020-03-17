@@ -60,10 +60,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_V2 -to ENTRADAS[0]
-set_location_assignment PIN_V1 -to ENTRADAS[1]
-set_location_assignment PIN_U4 -to ENTRADAS[2]
-set_location_assignment PIN_U3 -to ENTRADAS[3]
 set_location_assignment PIN_T3 -to SAIDAS[6]
 set_location_assignment PIN_R6 -to SAIDAS[5]
 set_location_assignment PIN_R7 -to SAIDAS[4]
@@ -72,5 +68,11 @@ set_location_assignment PIN_U1 -to SAIDAS[1]
 set_location_assignment PIN_U2 -to SAIDAS[2]
 set_location_assignment PIN_T4 -to SAIDAS[3]
 set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/belin/Documents/Dev-Local/Others/Quartus/BCD_7seg/output_files/Waveform.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "F:/Others/Quartus-Projects/LogicaReconfiguravel/BCD_7seg/Waveform3.vwf"
+set_location_assignment PIN_V2 -to A
+set_location_assignment PIN_V1 -to B
+set_location_assignment PIN_U4 -to C
+set_location_assignment PIN_U3 -to D
+set_global_assignment -name TEXT_FILE output_files/tabela.txt
+set_global_assignment -name TEXT_FILE tabela.txt
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

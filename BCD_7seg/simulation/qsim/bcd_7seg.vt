@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/11/2020 11:41:37"
+// Generated on "03/17/2020 07:32:47"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    bcd_7seg
 // 
@@ -27,15 +27,21 @@
 
 `timescale 1 ps/ 1 ps
 module bcd_7seg_vlg_sample_tst(
-	ENTRADAS,
+	A,
+	B,
+	C,
+	D,
 	sampler_tx
 );
-input [3:0] ENTRADAS;
+input  A;
+input  B;
+input  C;
+input  D;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(ENTRADAS)
+always @(A or B or C or D)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -58,16 +64,16 @@ module bcd_7seg_vlg_check_tst (
 	SAIDAS,
 	sampler_rx
 );
-input [6:0] SAIDAS;
+input [0:6] SAIDAS;
 input sampler_rx;
 
-reg [6:0] SAIDAS_expected;
+reg [0:6] SAIDAS_expected;
 
-reg [6:0] SAIDAS_prev;
+reg [0:6] SAIDAS_prev;
 
-reg [6:0] SAIDAS_expected_prev;
+reg [0:6] SAIDAS_expected_prev;
 
-reg [6:0] last_SAIDAS_exp;
+reg [0:6] last_SAIDAS_exp;
 
 reg trigger;
 
@@ -259,57 +265,66 @@ endmodule
 module bcd_7seg_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [3:0] ENTRADAS;
+reg A;
+reg B;
+reg C;
+reg D;
 // wires                                               
-wire [6:0] SAIDAS;
+wire [0:6] SAIDAS;
 
 wire sampler;                             
 
 // assign statements (if any)                          
 bcd_7seg i1 (
 // port map - connection between master ports and signals/registers   
-	.ENTRADAS(ENTRADAS),
+	.A(A),
+	.B(B),
+	.C(C),
+	.D(D),
 	.SAIDAS(SAIDAS)
 );
-// ENTRADAS[ 3 ]
-initial
-begin
-	repeat(6)
-	begin
-		ENTRADAS[3] = 1'b0;
-		ENTRADAS[3] = #80000 1'b1;
-		# 80000;
-	end
-	ENTRADAS[3] = 1'b0;
-end 
-// ENTRADAS[ 2 ]
+
+// A
 initial
 begin
 	repeat(12)
 	begin
-		ENTRADAS[2] = 1'b0;
-		ENTRADAS[2] = #40000 1'b1;
+		A = 1'b0;
+		A = #40000 1'b1;
 		# 40000;
 	end
-	ENTRADAS[2] = 1'b0;
+	A = 1'b0;
 end 
-// ENTRADAS[ 1 ]
+
+// B
 always
 begin
-	ENTRADAS[1] = 1'b0;
-	ENTRADAS[1] = #20000 1'b1;
+	B = 1'b0;
+	B = #20000 1'b1;
 	#20000;
 end 
-// ENTRADAS[ 0 ]
+
+// C
 always
 begin
-	ENTRADAS[0] = 1'b0;
-	ENTRADAS[0] = #10000 1'b1;
+	C = 1'b0;
+	C = #10000 1'b1;
 	#10000;
 end 
 
+// D
+always
+begin
+	D = 1'b0;
+	D = #5000 1'b1;
+	#5000;
+end 
+
 bcd_7seg_vlg_sample_tst tb_sample (
-	.ENTRADAS(ENTRADAS),
+	.A(A),
+	.B(B),
+	.C(C),
+	.D(D),
 	.sampler_tx(sampler)
 );
 
