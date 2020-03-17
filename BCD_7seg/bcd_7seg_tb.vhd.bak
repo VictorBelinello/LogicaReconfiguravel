@@ -1,0 +1,6 @@
+-- Testbench do conversor BCD ->7 segmentos
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+
+ENTITY bcd

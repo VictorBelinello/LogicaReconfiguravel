@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\Others\Quartus-Projects\LogicaReconfiguravel\BCD_7seg\simulation\modelsim
+Ebcd_7seg
+Z1 w1584476790
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dF:\Others\Quartus-Projects\LogicaReconfiguravel\BCD_7seg\simulation\modelsim
+Z5 8F:/Others/Quartus-Projects/LogicaReconfiguravel/BCD_7seg/bcd_7seg.vhd
+Z6 FF:/Others/Quartus-Projects/LogicaReconfiguravel/BCD_7seg/bcd_7seg.vhd
+l0
+L9
+VoGcC1PgB0g^@HX6`NeCUY2
+!s100 X0QJC7>5a4UO;9MA=9b_]3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1584477325.563000
+Z9 !s90 -reportprogress|300|-93|-work|work|F:/Others/Quartus-Projects/LogicaReconfiguravel/BCD_7seg/bcd_7seg.vhd|
+Z10 !s107 F:/Others/Quartus-Projects/LogicaReconfiguravel/BCD_7seg/bcd_7seg.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Ahardware
+R2
+R3
+DEx4 work 8 bcd_7seg 0 22 oGcC1PgB0g^@HX6`NeCUY2
+l18
+L17
+Vh;nO@3?f7AX1gnX_:cP;B0
+!s100 `4>kSzAaCBiMVYRABDf_51
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

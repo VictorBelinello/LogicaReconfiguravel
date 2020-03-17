@@ -1,0 +1,9 @@
+vcom -reportprogress 300 -work work F:/Others/Quartus-Projects/LogicaReconfiguravel/BCD_7seg/bcd_7seg_tb.vhd
+add wave -position insertpoint  \
+sim:/bcd_7seg_tb/A1 \
+sim:/bcd_7seg_tb/B1 \
+sim:/bcd_7seg_tb/C1 \
+sim:/bcd_7seg_tb/D1 \
+sim:/bcd_7seg_tb/SAIDAS1
+run 500 ns
+run 100 ns

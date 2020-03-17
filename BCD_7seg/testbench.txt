@@ -1,0 +1,5 @@
+A tela da simulação do Modelsim está salva na imagem wave.bmp
+A simulação foi feita para entreada entre 0 e 7 e para a entrada = 10 para apresentar o caractere de erro 'E'
+
+* Vale lembrar que o display é Ânodo comum logo as saídas podem ser vistas como ativas em LOW(0)
+* O bit mais da esquerda corresponde à saída a, o bit mais da direita é a saída g

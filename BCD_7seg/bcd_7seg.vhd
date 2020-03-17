@@ -8,9 +8,11 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 ENTITY bcd_7seg IS PORT (
 	A, B, C, D : IN std_logic;
-	SAIDAS : OUT std_logic_vector(0 TO 6)
+	SAIDAS : OUT std_logic_vector(0 TO 6) -- usado 0 TO 6 ao inves de 6 DOWNTO 0 para facilitar na comparação com a tabela verdade
 );
 END bcd_7seg;
+
+-- NOTA: 0 TO 6 faz com que o bit mais a esquerda seja de indice 0
 
 ARCHITECTURE hardware OF bcd_7seg IS
 BEGIN
