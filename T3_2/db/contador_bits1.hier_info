@@ -1,0 +1,33 @@
+|contador_bits1
+clk => sig_total[0].CLK
+clk => sig_total[1].CLK
+clk => var_total_while[0].CLK
+clk => var_total_while[1].CLK
+clk => var_total_for[0].CLK
+clk => var_total_for[1].CLK
+rst => sig_total[0].ACLR
+rst => sig_total[1].ACLR
+rst => var_total_while[0].ACLR
+rst => var_total_while[1].ACLR
+rst => var_total_for[0].ACLR
+rst => var_total_for[1].ACLR
+word[0] => Add0.IN2
+word[0] => var_total_for.DATAA
+word[0] => Mux0.IN10
+word[0] => Mux1.IN10
+word[1] => var_total_for.OUTPUTSELECT
+word[1] => var_total_for.OUTPUTSELECT
+word[1] => Mux0.IN9
+word[1] => Mux1.IN9
+word[2] => var_total_for.OUTPUTSELECT
+word[2] => var_total_for.OUTPUTSELECT
+word[2] => Mux0.IN8
+word[2] => Mux1.IN8
+output_signal[0] <= sig_total[0].DB_MAX_OUTPUT_PORT_TYPE
+output_signal[1] <= sig_total[1].DB_MAX_OUTPUT_PORT_TYPE
+output_var_for[0] <= var_total_for[0].DB_MAX_OUTPUT_PORT_TYPE
+output_var_for[1] <= var_total_for[1].DB_MAX_OUTPUT_PORT_TYPE
+output_var_while[0] <= var_total_while[0].DB_MAX_OUTPUT_PORT_TYPE
+output_var_while[1] <= var_total_while[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
