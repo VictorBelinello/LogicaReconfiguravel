@@ -1,25 +1,28 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do contador_bits1_run_msim_rtl_vhdl.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# do contador_bits1_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/belin/Documents/Devel/Quartus/T3/contador_bits1.vhd}
+# vcom -93 -work work {contador_bits1.vho}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
 # -- Compiling entity contador_bits1
-# -- Compiling architecture hardware of contador_bits1
+# -- Compiling architecture structure of contador_bits1
 # 
-vcom -reportprogress 300 -work work C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd
+# vcom -93 -work work {C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -27,37 +30,48 @@ vcom -reportprogress 300 -work work C:/Users/belin/Documents/Devel/Quartus/T3/tb
 # -- Loading package NUMERIC_STD
 # -- Compiling entity tb_contador_bits1
 # -- Compiling architecture hardware of tb_contador_bits1
-# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(50): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(55): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-vsim +altera -do contador_bits1_run_msim_rtl_vhdl.do -l msim_transcript -gui work.tb_contador_bits1
-# vsim +altera -do contador_bits1_run_msim_rtl_vhdl.do -l msim_transcript -gui work.tb_contador_bits1 
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /UUT=contador_bits1_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  tb_contador_bits1
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=contador_bits1_vhd.sdo -t 1ps tb_contador_bits1 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.tb_contador_bits1(hardware)
-# Loading work.contador_bits1(hardware)
-# do contador_bits1_run_msim_rtl_vhdl.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
-# vcom -93 -work work {C:/Users/belin/Documents/Devel/Quartus/T3/contador_bits1.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity contador_bits1
-# -- Compiling architecture hardware of contador_bits1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.contador_bits1(structure)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading instances from contador_bits1_vhd.sdo
+# Loading timing data from contador_bits1_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_contador_bits1 File: C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd
 # 
-add wave -position insertpoint sim:/tb_contador_bits1/UUT/*
-run 200ns
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2 us

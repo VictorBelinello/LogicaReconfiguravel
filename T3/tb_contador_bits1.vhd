@@ -11,33 +11,36 @@ entity tb_contador_bits1 is
 end entity;
 
 architecture hardware of tb_contador_bits1 is	
+
+	signal   clk, rst : std_logic;	-- Clock de entrada e rst
+	signal 	word : std_logic_vector(2 downto 0); -- Palavra de 3 bits
+	signal 	output_signal: std_logic_vector(1 downto 0); -- Usando signal. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+	signal 	output_var: std_logic_vector(1 downto 0); -- Usando variable. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+	
 	component contador_bits1 is 
 	port(
 		clk, rst : in std_logic;	-- Clock de entrada e rst
 		word : in std_logic_vector(2 downto 0); -- Palavra de 3 bits
-		output_signal: out unsigned(1 downto 0); -- Usando signal. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
-		output_var: out unsigned(1 downto 0) -- Usando variable. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+		output_signal: out std_logic_vector(1 downto 0); -- Usando signal. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+		output_var: out std_logic_vector(1 downto 0) -- Usando variable. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
 		);
 	end component;
-	
-	signal   clk, rst : std_logic;	-- Clock de entrada e rst
-	signal 	word : std_logic_vector(2 downto 0); -- Palavra de 3 bits
-	signal 	output_signal: unsigned(1 downto 0); -- Usando signal. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
-	signal 	output_var: unsigned(1 downto 0); -- Usando variable. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+
 	
 	begin 
-		UUT:contador_bits1
+		UUT:contador_bits1 
 		port map(
-			clk => clk,
-			rst => rst,
-			word => word,
-			output_signal => output_signal,
-			output_var => output_var
+			clk,
+			rst,
+			word,
+			output_signal,
+			output_var
 		);
+		
 	process
 	begin
 		rst <= '1';
-		wait for 5ns;
+		wait for 50ns;
 		rst <= '0';
 		wait;
 	end process;
@@ -45,18 +48,19 @@ architecture hardware of tb_contador_bits1 is
 	process
 	begin
 		clk <= '0';
-		wait for 5ns;
+		wait for 50ns;
 		clk <= '1';
-		wait for 5ns;
+		wait for 50ns;
 	end process;
 	
 	process
 	begin
-		wait for 5ns;
-		word <= "101";
-		wait for 30ns; word <= "001";
-		wait for 30ns; word <= "111";
-		wait for 30ns; word <= "000";
+		word <= "101"; wait for 300ns; 
+		word <= "001"; wait for 300ns; 
+		word <= "000"; wait for 300ns; 
+		word <= "111"; wait for 300ns;  
+		word <= "110"; wait for 300ns; 
+		word <= "100"; wait for 300ns; 
 		wait;
 	end process;
 	

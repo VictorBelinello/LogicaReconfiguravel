@@ -11,8 +11,8 @@ entity contador_bits1 is
 port(
 	clk, rst : in std_logic;	-- Clock de entrada e rst
 	word : in std_logic_vector(2 downto 0); -- Palavra de 3 bits
-	output_signal: out unsigned(1 downto 0); -- Usando signal. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
-	output_var: out unsigned(1 downto 0) -- Usando variable. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+	output_signal: out std_logic_vector(1 downto 0); -- Usando signal. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
+	output_var: out std_logic_vector(1 downto 0) -- Usando variable. Pode ser 4 valores (0,1,2,3) logo precisa de 2 bits
 );
 end entity;
 
@@ -58,11 +58,10 @@ begin
 				
 			end if;
 		end if;
-		output_var <= to_unsigned(var_total, 2);
+		output_var <= std_logic_vector(to_unsigned(var_total, 2));
 	end process;
 	
-	output_signal <= to_unsigned(total, 2);
+	output_signal <= std_logic_vector(to_unsigned(total, 2));
 	
 		
 end hardware;
-

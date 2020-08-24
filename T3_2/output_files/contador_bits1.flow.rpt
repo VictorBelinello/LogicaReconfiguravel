@@ -1,5 +1,5 @@
 Flow report for contador_bits1
-Sun Aug 23 11:42:52 2020
+Mon Aug 24 15:32:58 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Aug 23 11:42:52 2020           ;
+; Flow Status                        ; Successful - Mon Aug 24 15:32:58 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; contador_bits1                                  ;
 ; Top-level Entity Name              ; contador_bits1                                  ;
@@ -64,27 +64,35 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/23/2020 11:42:40 ;
+; Start date & time ; 08/24/2020 15:32:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; contador_bits1      ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                  ;
-+-------------------------------------+------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 113780617491.159819376004276 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --            ; --          ; --             ;
-+-------------------------------------+------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                   ;
++--------------------------------------+------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                        ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 113780617491.159829396605988 ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; UUT                          ; --            ; --          ; tb             ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                           ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                         ; --            ; --          ; eda_simulation ;
+; EDA_RUN_TOOL_AUTOMATICALLY           ; On                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE              ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; contador_bits1_tb.vhd        ; --            ; --          ; tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_contador_bits1            ; --            ; --          ; tb             ;
+; EDA_TEST_BENCH_NAME                  ; tb                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 2 us                         ; --            ; --          ; tb             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                           ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                            ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                     ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                       ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                 ; --            ; --          ; --             ;
++--------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -92,12 +100,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4624 MB             ; 00:00:01                           ;
 ; Fitter                    ; 00:00:04     ; 1.0                     ; 4871 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4548 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4536 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4508 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:08                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

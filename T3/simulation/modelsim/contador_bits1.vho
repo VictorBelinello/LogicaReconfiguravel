@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "08/22/2020 14:40:08"
+-- DATE "08/24/2020 15:18:13"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -29,7 +29,6 @@
 LIBRARY CYCLONEII;
 LIBRARY IEEE;
 USE CYCLONEII.CYCLONEII_COMPONENTS.ALL;
-USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	contador_bits1 IS
@@ -37,8 +36,8 @@ ENTITY 	contador_bits1 IS
 	clk : IN std_logic;
 	rst : IN std_logic;
 	word : IN std_logic_vector(2 DOWNTO 0);
-	output_signal : OUT IEEE.NUMERIC_STD.unsigned(1 DOWNTO 0);
-	output_var : OUT IEEE.NUMERIC_STD.unsigned(1 DOWNTO 0)
+	output_signal : OUT std_logic_vector(1 DOWNTO 0);
+	output_var : OUT std_logic_vector(1 DOWNTO 0)
 	);
 END contador_bits1;
 
@@ -97,8 +96,8 @@ BEGIN
 ww_clk <= clk;
 ww_rst <= rst;
 ww_word <= word;
-output_signal <= IEEE.NUMERIC_STD.UNSIGNED(ww_output_signal);
-output_var <= IEEE.NUMERIC_STD.UNSIGNED(ww_output_var);
+output_signal <= ww_output_signal;
+output_var <= ww_output_var;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;

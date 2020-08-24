@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\belin\Documents\Devel\Quartus\T3\simulation\modelsim
 Econtador_bits1
-Z1 w1598117994
+Z1 w1598292937
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -13,30 +13,67 @@ Z6 8C:/Users/belin/Documents/Devel/Quartus/T3/contador_bits1.vhd
 Z7 FC:/Users/belin/Documents/Devel/Quartus/T3/contador_bits1.vhd
 l0
 L10
-VMU]YP?[bUE^mcIX@:Kl`@1
-!s100 7K;XIY[J;1f[PF_lf<3W82
+VMcCJG2cOQVzja0I^@:HlV3
 Z8 OV;C;10.1d;51
 31
-!i10b 1
-Z9 !s108 1598118034.636000
+Z9 !s108 1598293104.928000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/belin/Documents/Devel/Quartus/T3/contador_bits1.vhd|
 Z11 !s107 C:/Users/belin/Documents/Devel/Quartus/T3/contador_bits1.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
+!s100 gON[5V]23OQHzN@a?0RK:1
+!i10b 1
 Ahardware
 R2
 R3
 R4
-DEx4 work 14 contador_bits1 0 22 MU]YP?[bUE^mcIX@:Kl`@1
+DEx4 work 14 contador_bits1 0 22 McCJG2cOQVzja0I^@:HlV3
 l22
 L19
-VLMK1c?cKg34<c5dVD:][_1
-!s100 TBKcW:S`LLhmC>@JQ=TbL0
+V]GIUR^`CN>[9S;mniW1lC0
 R8
 31
-!i10b 1
 R9
 R10
 R11
+R12
+R13
+!s100 X_:`KaXUTRozS^PWLkOEe2
+!i10b 1
+Etb_contador_bits1
+Z14 w1598292940
+R2
+R3
+R4
+R5
+Z15 8C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd
+Z16 FC:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd
+l0
+L10
+VD0K>HfSVVZQ1h:kMKV`X_2
+!s100 PDaOn_l[4RW6Q9eClkk[K2
+R8
+31
+!i10b 1
+Z17 !s108 1598293105.024000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd|
+Z19 !s107 C:/Users/belin/Documents/Devel/Quartus/T3/tb_contador_bits1.vhd|
+R12
+R13
+Ahardware
+R2
+R3
+R4
+DEx4 work 17 tb_contador_bits1 0 22 D0K>HfSVVZQ1h:kMKV`X_2
+l30
+L13
+VVRMkNkU6o8O@XE5ZXF9AK3
+!s100 fc_Di@CoFVbZiHW[g;4k`0
+R8
+31
+!i10b 1
+R17
+R18
+R19
 R12
 R13
